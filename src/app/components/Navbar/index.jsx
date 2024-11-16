@@ -34,7 +34,7 @@ const Navbar = () => {
         }`}
       >
         <a
-          href="/"
+          href="#home"
           onClick={() => handleScroll("home")}
           className="py-2 text-center transition-all duration-300 rounded-md cursor-pointer hover:text-blue-500 sm:px-4"
         >
