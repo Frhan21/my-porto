@@ -3,9 +3,9 @@ import Link from "next/link";
 
 const About = () => {
   return (
-    <div className="w-full h-auto flex flex-col md:flex-row justify-center items-center mt-[17rem] md:mt-10 px-5 sm:px-24 gap-7 md:gap-[5rem]">
+    <div className="w-full h-auto flex flex-col md:flex-row justify-center items-center mt-[30rem] md:mt-10 px-5 sm:px-24 gap-7 md:gap-[5rem]" id="about">
       {/* Text Section */}
-      <div className="flex flex-col w-full md:w-1/2 gap-4 mt-10 md:mt-0">
+      <div className="flex flex-col w-full gap-4 mt-10 md:w-1/2 md:mt-0" data-aos='fade-right'>
         <div className="flex flex-col gap-2 text-center md:text-left">
           <span className="text-4xl md:text-7xl font-extrabold text-[#6eacda]">
             Here's
@@ -32,7 +32,7 @@ const About = () => {
       </div>
 
       {/* Image Section */}
-      <div className="w-full md:w-auto flex justify-center">
+      <div className="flex justify-center w-full md:w-auto" data-aos="fade-up">
         <Image
           src="/img/Group 10.png"
           width={400}

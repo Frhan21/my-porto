@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 body {
-    background-image: url('img/Hi-Fi Verr.jpg');
+  background-image: url("img/Hi-Fi Verr.jpg");
+}
+
+html {
+  scroll-behavior: smooth;
 }

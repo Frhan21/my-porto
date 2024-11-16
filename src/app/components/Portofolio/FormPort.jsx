@@ -74,7 +74,7 @@ const Form = () => {
             </select>
           </div>
           <div className="mb-4">
-            <label className="block text-sm font-medium text-black">
+            <label className="block text-sm font-medium text-[#e2e2b6]">
               Source Code
             </label>
             <input

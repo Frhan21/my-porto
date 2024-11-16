@@ -5,6 +5,8 @@ import Form from "../components/Portofolio/FormPort";
 import Table from "../components/Portofolio/TableData";
 import { useEffect, useState } from "react";
 
+
+  
 const Page = () => {
   const [data, setData] = useState([]);
   useEffect(() => {

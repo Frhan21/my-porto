@@ -5,15 +5,14 @@ import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
-
 const Card = ({ data }) => {
   return (
     <>
-      <div className="grid grid-cols-2 gap-6 mt-10 lg:grid-cols-3 sm:gap-10">
+      <div className="grid grid-cols-2 gap-6 my-[5rem] lg:grid-cols-3 sm:gap-10" data-aos="fade-up">
         {data.map((item, index) => (
           <div
             key={index}
-            className="relative bg-white w-[250px] h-[250px] md:w-[300px] md:h-[300px] rounded-2xl overflow-hidden group"
+            className="relative bg-white w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] mx-auto rounded-2xl overflow-hidden group"
           >
             {/* Gambar */}
             <Image
@@ -25,21 +24,21 @@ const Card = ({ data }) => {
             />
 
             {/* Overlay hitam transparan */}
-            <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 bg-black/60 group-hover:opacity-100">
-              <div className="flex flex-col text-center">
-                <h2 className="text-lg font-bold text-white sm:text-xl">
-                  {item.title}
-                </h2>
-                <span className="text-sm text-white sm:text-md">
-                  {item.description}
-                </span>
-              </div>
+            <div className="absolute inset-0 flex flex-col items-center justify-center transition-opacity duration-300 opacity-0 bg-black/60 group-hover:opacity-100">
+              <h2 className="text-sm font-bold text-white sm:text-lg">
+                {item.title}
+              </h2>
+              <span className="text-xs text-white sm:text-sm">
+                {item.description}
+              </span>
 
               {/* Icon Kode dan View */}
               <div className="absolute text-white bg-[#021526] px-2 py-1 sm:px-3 sm:py-2 bottom-2 left-2 rounded-md">
-                <Link href={item.githubLink} target="_blank">
-                  <FontAwesomeIcon icon={faCode} />
-                </Link>
+                {item.githubLink && (
+                  <Link href={item.githubLink} target="_blank">
+                    <FontAwesomeIcon icon={faCode} />
+                  </Link>
+                )}
               </div>
               <div className="absolute text-white bg-[#021526] px-2 py-1 sm:px-3 sm:py-2 bottom-2 right-2 rounded-md">
                 <Link href={item.liveLink} target="_blank">
