@@ -6,7 +6,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <div className="w-full h-fit mt: md:mt-[8rem]" id="contact">
+      <div className="w-full h-fit md:mt-[15rem]" id="contact">
         <div className="flex flex-col gap-6 mx-7 md:mx-[5rem]">
           <div className="flex flex-col justify-start gap-1 md:gap-4">
             <span className="text-4xl md:text-6xl font-extrabold text-[#e2e2b6]">
@@ -19,13 +19,13 @@ const Footer = () => {
           <div className="flex gap-6">
             <Link
               href="/"
-              className="bg-[#e2e2b6] border-2 border-[#e2e2b6] hover:bg-[#021526] hover:text-[#e2e2b6] px-4 py-2 rounded-md font-bold text-xl transition-all ease-in-out duration-300 hover:shadow-md hover:shadow-white/25"
+              className="bg-[#e2e2b6] border-2 border-[#e2e2b6] hover:bg-[#021526] hover:text-[#e2e2b6] px-4 py-2 rounded-full font-bold text-xl transition-all ease-in-out duration-300 hover:shadow-md hover:shadow-white/25"
             >
               <FontAwesomeIcon icon={faWhatsapp} /> Call me
             </Link>
             <Link
               href="/"
-              className="bg-[#e2e2b6] border-2 border-[#e2e2b6] hover:bg-[#021526] hover:text-[#e2e2b6] px-4 py-2 rounded-md font-bold text-xl transition-all ease-in-out duration-300 hover:shadow-md hover:shadow-white/25"
+              className="bg-[#e2e2b6] border-2 border-[#e2e2b6] hover:bg-[#021526] hover:text-[#e2e2b6] px-4 py-2 rounded-full font-bold text-xl transition-all ease-in-out duration-300 hover:shadow-md hover:shadow-white/25"
             >
               <FontAwesomeIcon icon={faEnvelope} /> Email me
             </Link>

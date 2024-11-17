@@ -1,10 +1,9 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
   const navbarRef = useRef(null);
 
   const handleScroll = (id) => {
@@ -13,7 +12,7 @@ const Navbar = () => {
       const navbarHeight = navbarRef.current.offsetHeight; // Mengukur tinggi navbar
       const yOffset = -navbarHeight - 10; // Tambahkan margin kecil
       const y =
-        targetElement.getBoundingClientRect().top +``
+        targetElement.getBoundingClientRect().top +
         window.pageYOffset +
         yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
@@ -21,28 +20,10 @@ const Navbar = () => {
     }
   };
 
-  useEffect(() => {
-    const handleStickyNavbar = () => {
-      if (window.scrollY > 0) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleStickyNavbar);
-
-    return () => {
-      window.removeEventListener("scroll", handleStickyNavbar);
-    };
-  }, []);
-
   return (
     <div
       ref={navbarRef}
-      className={`${
-        isSticky ? "sticky top-0" : "relative"
-      } z-50 flex items-center justify-between w-full px-3 py-2 text-white transition-all duration-300 border-b-2 rounded-b-[1rem] backdrop-blur-lg bg-white/10 border-white/25 sm:px-20`}
+      className="relative z-50 flex items-center justify-between w-full px-5 py-5 text-white transition-all duration-300 sm:px-20"
     >
       <div className="flex flex-col items-center">
         <span className="text-xl font-bold">M Farhan Ramadhan</span>

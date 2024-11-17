@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCss3Alt,
   faFacebook,
@@ -15,7 +14,6 @@ import {
   faPython,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
-import Link from "next/link";
 import IconList from "../IconList";
 import SocialLinks from "../SosialLinks";
 
