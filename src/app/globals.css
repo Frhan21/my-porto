@@ -2,10 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+  --font-jetbrains: 'JetBrains Mono', monospace;
+}
+
 body {
   background-image: url("img/Hi-Fi Verr.jpg");
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.font-jetbrains {
+  font-family: var(--font-jetbrains);
 }
