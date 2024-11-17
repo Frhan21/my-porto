@@ -14,6 +14,10 @@ const Portofolio = () => {
     };
     fetchData();
   }, [])
+
+  if (!data) return (
+    <div>Loading...</div>
+  )
   return (
     <>
       <div className="flex flex-col items-center justify-center w-full mt-[15rem] h-fit" id="portfolio">

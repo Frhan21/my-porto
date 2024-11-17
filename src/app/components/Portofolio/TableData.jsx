@@ -9,11 +9,20 @@ const Table = ({ data }) => {
       window.location.href = "/dashboard";
     }
   };
+
   return (
     <>
       <div>
-        <div>
-          {data && (
+        {data.length === 0 ? (
+          // Pesan jika data kosong
+          <div className="py-10 text-center">
+            <p className="text-lg font-semibold text-gray-500">
+              Tidak ada data projek
+            </p>
+          </div>
+        ) : (
+          // Tabel jika data tersedia
+          <div>
             <table className="w-3/5 mx-auto border border-collapse border-gray-300 table-fixed">
               <thead className="text-white bg-gray-800">
                 <tr>
@@ -87,8 +96,8 @@ const Table = ({ data }) => {
                 ))}
               </tbody>
             </table>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </>
   );
