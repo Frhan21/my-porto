@@ -82,16 +82,9 @@ const Home = () => {
           <h1 className="text-[#e2e2b6] text-3xl md:text-6xl font-extrabold">
             It’s me, Farhan
           </h1>
-          <p className="max-w-lg text-4xl text-white md:text-lg">
-            I' m a{" "}
-            <span className="bg-[#e2e2b6] text-blue-900 p-2 rounded-xl font-bold font-jetbrains">
-              fullstack developer
-            </span>{" "}
-            also with{" "}
-            <span className="bg-[#e2e2b6] text-blue-900 p-2 rounded-xl font-bold font-jetbrains">
-              graphic design
-            </span>{" "}
-            skills.
+          <p className="max-w-lg text-white text-md md:text-lg font-jetbrains">
+            As a Full-Stack Developer with a creative touch in
+            graphic design. Let’s create something amazing!
           </p>
           <div>
             <IconList icons={icons} />

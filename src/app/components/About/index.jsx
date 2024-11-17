@@ -4,7 +4,7 @@ import Link from "next/link";
 const About = () => {
   return (
     <div
-      className="w-full h-auto flex flex-col md:flex-row justify-center items-center mt-[30rem] md:mt-10 px-5 sm:px-24 gap-7 md:gap-[5rem]"
+      className="w-full h-auto flex flex-col md:flex-row justify-center items-center mt-[15rem] md:mt-10 px-5 sm:px-24 gap-7 md:gap-[5rem]"
       id="about"
     >
       {/* Text Section */}
@@ -20,7 +20,7 @@ const About = () => {
             About Me !!
           </span>
         </div>
-        <p className="text-base text-justify text-white md:text-xl font-jetbrains">
+        <p className="text-base text-center text-white md:text-justify md:text-xl font-jetbrains">
           I'm a physics graduate chasing my passion in developing and design.
           Over time, I've learned a lot and honed my skills in creating awesome
           apps and websites. I also have experience in building applications and
