@@ -19,7 +19,7 @@ const Card = ({ data }) => {
             </p>
           </div>
         ) : (
-          data.map((item, index) => (
+          data?.map((item, index) => (
             <div
               key={index}
               className="relative bg-white w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] mx-auto rounded-2xl overflow-hidden group"
